@@ -24,15 +24,40 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Reset */
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/**
+  |============================
+  | Reset
+  |============================
+*/
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-/* Header */
+/**
+  |============================
+  | Header
+  |============================
+*/
 .header-logo {
   color: var(--iris-color);
   font-family: 'Raleway', sans-serif;
@@ -67,7 +92,11 @@ body {
   color: #404bbf;
 }
 
-/* Section Hero */
+/**
+  |============================
+  | Section Hero
+  |============================
+*/
 .hero {
   background-color: var(--hero-background);
 }
@@ -89,6 +118,7 @@ body {
   font-size: inherit;
   line-height: inherit;
 }
+
 .main-button {
   color: var(--clean-white);
   background-color: var(--iris-color);
@@ -110,7 +140,11 @@ body {
   background-color: #404bbf;
 }
 
-/* Section Advantages */
+/**
+  |============================
+  | Section Advantages
+  |============================
+*/
 .secondary-title {
   color: var(--title);
   font-weight: 500;
@@ -119,7 +153,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Section What are we doing */
+/**
+  |============================
+  | Section What are we doing 
+  |============================
+*/
 .section-title {
   color: var(--title);
   font-weight: 700;
@@ -130,7 +168,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Section Our team */
+/**
+  |============================
+  | Section Our team
+  |============================
+*/
 .team {
   background-color: var(--secondary-background);
 }
@@ -141,7 +183,11 @@ body {
   font-size: 16px;
 }
 
-/* Footer */
+/**
+  |============================
+  | Footer
+  |============================
+*/
 .footer {
   background-color: var(--footer-background);
 }
