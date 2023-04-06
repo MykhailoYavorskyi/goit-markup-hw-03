@@ -14,6 +14,7 @@
 }
 
 body {
+  margin: 0;
   background-color: var(--clean-white);
   color: var(--primary-text);
   font-family: 'Roboto', sans-serif;
@@ -26,8 +27,10 @@ body {
 
 .container {
   width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /**
@@ -37,10 +40,13 @@ body {
 */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -52,14 +58,80 @@ ul {
   margin: 0;
   padding: 0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  | Button
+  |============================
+*/
+
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.main-button {
+  color: var(--clean-white);
+  background-color: var(--iris-color);
+  border: none;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
+}
+
+.secondary-button {
+  color: var(--iris-color);
+  background-color: var(--secondary-background);
+  border: 1px solid #e7e9fc;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  color: var(--clean-white);
+  background-color: #404bbf;
+}
 
 /**
   |============================
   | Header
   |============================
 */
+.header-nav {
+  display: flex;
+}
 .header-logo {
-  color: var(--iris-color);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -69,24 +141,36 @@ ul {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: var(--iris-color);
 }
+
 .header-logo-element {
   color: var(--title);
+}
+.site-nav {
+  display: flex;
 }
 .site-nav-item {
   color: var(--title);
   font-weight: 500;
 }
+
 .site-nav-item:hover,
 .site-nav-item:focus {
   color: #404bbf;
 }
+
 .address {
   font-style: normal;
 }
+.address-nav {
+  display: flex;
+}
+
 .address-item {
   color: var(--primary-text);
 }
+
 .address-item:hover,
 .address-item:focus {
   color: #404bbf;
@@ -99,45 +183,24 @@ ul {
 */
 .hero {
   background-color: var(--hero-background);
+  text-align: center;
 }
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .main-title {
   color: var(--clean-white);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
-}
-.btn {
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.04em;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.main-button {
-  color: var(--clean-white);
-  background-color: var(--iris-color);
-}
-
-.main-button:hover,
-.main-button:focus {
-  background-color: #404bbf;
-}
-
-.secondary-button {
-  color: var(--iris-color);
-  background-color: var(--secondary-background);
-}
-
-.secondary-button:hover,
-.secondary-button:focus {
-  color: var(--clean-white);
-  background-color: #404bbf;
+  width: 496px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
 }
 
 /**
@@ -146,6 +209,7 @@ ul {
   |============================
 */
 .secondary-title {
+  margin-bottom: 8px;
   color: var(--title);
   font-weight: 500;
   font-size: 20px;
@@ -153,9 +217,13 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.advantages-list {
+  display: flex;
+}
+
 /**
   |============================
-  | Section What are we doing 
+  | Section Projects 
   |============================
 */
 .section-title {
@@ -168,6 +236,9 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.projects-list {
+  display: flex;
+}
 /**
   |============================
   | Section Our team
@@ -175,6 +246,9 @@ ul {
 */
 .team {
   background-color: var(--secondary-background);
+}
+.team-list {
+  display: flex;
 }
 .team-list-element {
   background-color: var(--clean-white);
