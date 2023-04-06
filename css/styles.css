@@ -220,6 +220,10 @@ ul {
 .advantages-list {
   display: flex;
 }
+.advantages-list-item {
+  margin-right: 24px;
+  width: 264px;
+}
 
 /**
   |============================
