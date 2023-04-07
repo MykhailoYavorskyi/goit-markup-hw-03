@@ -108,13 +108,15 @@ ul {
 }
 
 .main-button {
-  color: var(--clean-white);
-  background-color: var(--iris-color);
-  border: none;
+  display: block;
+  min-width: 169px;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
+  border: none;
+  color: var(--clean-white);
+  background-color: var(--iris-color);
 }
 
 .main-button:hover,
@@ -238,7 +240,7 @@ ul {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 48px;
@@ -249,10 +251,6 @@ ul {
   | Section Advantages
   |============================
 */
-
-.section-advantages {
-  padding-bottom: 0;
-}
 
 .secondary-title {
   margin-bottom: 8px;
@@ -315,7 +313,6 @@ ul {
 }
 .team-list-element {
   background-color: var(--clean-white);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-list-element:not(:last-child) {
   margin-right: 24px;
@@ -324,7 +321,10 @@ ul {
 .team-list-content {
   text-align: center;
   padding-top: 32px;
+  padding-right: 16px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list-text {
@@ -393,6 +393,7 @@ ul {
   text-transform: uppercase;
 }
 .footer-logo-element {
+  display: inline-block;
   color: var(--footer-text);
 }
 .footer-text {
