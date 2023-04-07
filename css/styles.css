@@ -72,6 +72,21 @@ ul {
   overflow: hidden;
 }
 
+.img {
+  display: block;
+}
+
+/**
+  |============================
+  | General section 
+  |============================
+*/
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /**
   |============================
   | Button
@@ -111,10 +126,10 @@ ul {
   color: var(--iris-color);
   background-color: var(--secondary-background);
   border: 1px solid #e7e9fc;
-  padding-top: 12px;
-  padding-right: 24px;
-  padding-bottom: 12px;
-  padding-left: 24px;
+  padding-top: 11px;
+  padding-right: 23px;
+  padding-bottom: 11px;
+  padding-left: 23px;
 }
 
 .secondary-button:hover,
@@ -128,10 +143,21 @@ ul {
   | Header
   |============================
 */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 76px;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -150,7 +176,17 @@ ul {
 .site-nav {
   display: flex;
 }
+
+.site-nav-list {
+  margin-right: 40px;
+}
+.site-nav-list:last-child {
+  margin-right: 0;
+}
+
 .site-nav-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--title);
   font-weight: 500;
 }
@@ -162,9 +198,17 @@ ul {
 
 .address {
   font-style: normal;
+  margin-left: auto;
 }
 .address-nav {
   display: flex;
+}
+
+.address-nav-list {
+  margin-right: 40px;
+}
+.address-nav-list:last-child {
+  margin-right: 0;
 }
 
 .address-item {
@@ -184,11 +228,8 @@ ul {
 .hero {
   background-color: var(--hero-background);
   text-align: center;
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
@@ -208,6 +249,11 @@ ul {
   | Section Advantages
   |============================
 */
+
+.section-advantages {
+  padding-bottom: 0;
+}
+
 .secondary-title {
   margin-bottom: 8px;
   color: var(--title);
@@ -220,9 +266,13 @@ ul {
 .advantages-list {
   display: flex;
 }
+
 .advantages-list-item {
+  width: calc((100%-3 * 24) / 4);
+}
+
+.advantages-list-item:not(:last-child) {
   margin-right: 24px;
-  width: 264px;
 }
 
 /**
@@ -231,6 +281,7 @@ ul {
   |============================
 */
 .section-title {
+  margin-bottom: 72px;
   color: var(--title);
   font-weight: 700;
   font-size: 36px;
@@ -242,6 +293,14 @@ ul {
 
 .projects-list {
   display: flex;
+}
+
+.projects-list-item {
+  width: calc((100%-2 * 24) / 3);
+}
+
+.projects-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 /**
   |============================
@@ -256,11 +315,60 @@ ul {
 }
 .team-list-element {
   background-color: var(--clean-white);
+  border-radius: 0px 0px 4px 4px;
 }
+.team-list-element:not(:last-child) {
+  margin-right: 24px;
+}
+
+.team-list-content {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .team-list-text {
   font-size: 16px;
 }
 
+/**
+  |============================
+  | Portfolio
+  |============================
+*/
+.section-portfolio {
+  padding-top: 96px;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+.button-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-element {
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.portfolio-list-element:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-list-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-right: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+}
 /**
   |============================
   | Footer
@@ -268,8 +376,11 @@ ul {
 */
 .footer {
   background-color: var(--footer-background);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo {
+  margin-bottom: 16px;
   color: var(--iris-color);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -285,5 +396,6 @@ ul {
   color: var(--footer-text);
 }
 .footer-text {
+  width: 264px;
   color: var(--footer-text);
 }

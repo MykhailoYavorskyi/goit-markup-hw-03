@@ -19,23 +19,26 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <div class="container"
+      <div class="container flex"
         ><nav class="header-nav">
           <a href="./index.html" class="header-logo link">web<span class="header-logo-element">Studio</span></a>
           <ul class="site-nav list">
-            <li><a href="./index.html" class="site-nav-item link">Studio</a></li>
-            <li><a href="./portfolio.html" class="site-nav-item link">Portfolio</a></li>
-            <li><a href="" class="site-nav-item link">Contacts</a></li>
+            <li class="site-nav-list"><a href="./index.html" class="site-nav-item link">Studio</a></li>
+            <li class="site-nav-list"><a href="./portfolio.html" class="site-nav-item link">Portfolio</a></li>
+            <li class="site-nav-list"><a href="" class="site-nav-item link">Contacts</a></li>
           </ul>
-
-          <address class="address">
-            <ul class="address-nav list">
-              <li><a href="mailto:info@devstudio.com" class="address-item link">info@devstudio.com</a></li>
-              <li><a href="tel:+110001111111" class="address-item link">+11 (000) 111-11-11</a></li>
-            </ul>
-          </address>
-        </nav></div
-      >
+        </nav>
+        <address class="address">
+          <ul class="address-nav list">
+            <li class="address-nav-list"
+              ><a href="mailto:info@devstudio.com" class="address-item link">info@devstudio.com</a></li
+            >
+            <li class="address-nav-list"
+              ><a href="tel:+110001111111" class="address-item link">+11 (000) 111-11-11</a></li
+            >
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <!-- Section Hero -->
@@ -47,7 +50,7 @@
       </section>
 
       <!-- Section Advantages -->
-      <section class="section">
+      <section class="section-advantages section">
         <div class="container"
           ><h2 class="section-title visually-hidden">Advantages</h2>
           <ul class="advantages-list list">
@@ -84,18 +87,19 @@
         <div class="container"
           ><h2 class="section-title">What are we doing</h2>
           <ul class="projects-list list">
-            <li>
-              <img src="./images/section_what_are_we_doing/img1.jpg" alt="pc" width="360" height="300" />
+            <li class="projects-list-item">
+              <img src="./images/section_what_are_we_doing/img1.jpg" alt="pc" width="360" height="300" class="img" />
             </li>
-            <li>
-              <img src="./images/section_what_are_we_doing/img2.jpg" alt="phone" width="360" height="300" />
+            <li class="projects-list-item">
+              <img src="./images/section_what_are_we_doing/img2.jpg" alt="phone" width="360" height="300" class="img" />
             </li>
-            <li>
+            <li class="projects-list-item">
               <img
                 src="./images/section_what_are_we_doing/img3.jpg"
                 alt="notebook and phone"
                 width="360"
                 height="300"
+                class="img"
               />
             </li> </ul
         ></div>
@@ -107,24 +111,46 @@
           ><h2 class="section-title">Our Team</h2>
           <ul class="list team-list">
             <li class="team-list-element">
-              <img src="./images/section_our_team/Marc_Guerrero.jpg" alt="Mark Guerrero" width="264" height="260" />
-              <h3 class="secondary-title">Mark Guerrero</h3>
-              <p class="team-list-text">Product Designer</p>
+              <img
+                src="./images/section_our_team/Marc_Guerrero.jpg"
+                alt="Mark Guerrero"
+                width="264"
+                height="260"
+                class="img"
+              />
+              <div class="team-list-content">
+                <h3 class="secondary-title">Mark Guerrero</h3> <p class="team-list-text">Product Designer</p></div
+              >
             </li>
             <li class="team-list-element">
-              <img src="./images/section_our_team/Tom_Ford.jpg" alt="Tom Ford" width="264" height="260" />
-              <h3 class="secondary-title">Tom Ford</h3>
-              <p class="team-list-text">Frontend Developer</p>
+              <img src="./images/section_our_team/Tom_Ford.jpg" alt="Tom Ford" width="264" height="260" class="img" />
+              <div class="team-list-content">
+                <h3 class="secondary-title">Tom Ford</h3> <p class="team-list-text">Frontend Developer</p></div
+              >
             </li>
             <li class="team-list-element">
-              <img src="./images/section_our_team/Camila_Garsia.jpg" alt="Camila Garcia" width="264" height="260" />
-              <h3 class="secondary-title">Camila Garcia</h3>
-              <p class="team-list-text">Marketing</p>
+              <img
+                src="./images/section_our_team/Camila_Garsia.jpg"
+                alt="Camila Garcia"
+                width="264"
+                height="260"
+                class="img"
+              />
+              <div class="team-list-content">
+                <h3 class="secondary-title">Camila Garcia</h3> <p class="team-list-text">Marketing</p></div
+              >
             </li>
             <li class="team-list-element">
-              <img src="./images/section_our_team/Daniel_Wilson.jpg" alt="Daniel Wilson" width="264" height="260" />
-              <h3 class="secondary-title">Daniel Wilson</h3>
-              <p class="team-list-text">UI Designer</p>
+              <img
+                src="./images/section_our_team/Daniel_Wilson.jpg"
+                alt="Daniel Wilson"
+                width="264"
+                height="260"
+                class="img"
+              />
+              <div class="team-list-content">
+                <h3 class="secondary-title">Daniel Wilson</h3> <p class="team-list-text">UI Designer</p></div
+              >
             </li>
           </ul></div
         >
