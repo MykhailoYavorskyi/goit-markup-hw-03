@@ -289,12 +289,10 @@ ul {
 }
 .team-list {
   display: flex;
+  gap: 24px;
 }
 .team-list-element {
   background-color: var(--clean-white);
-}
-.team-list-element:not(:last-child) {
-  margin-right: 24px;
 }
 
 .team-list-content {
@@ -324,23 +322,15 @@ ul {
 .button-list {
   display: flex;
   justify-content: center;
+  gap: 24px;
   margin-bottom: 72px;
-}
-.button-list-item:not(:last-child) {
-  margin-right: 24px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-}
-
-.portfolio-list-element {
-  margin-right: 24px;
-  margin-bottom: 48px;
-}
-.portfolio-list-element:nth-child(3n) {
-  margin-right: 0;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-list-content {
