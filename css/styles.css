@@ -255,7 +255,11 @@ ul {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
+}
+
+.advantages-list-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 /**
